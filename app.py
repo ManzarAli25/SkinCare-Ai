@@ -10,8 +10,8 @@ from langchain.schema import SystemMessage, HumanMessage, AIMessage
 
 # Initialize environment
 st.title("FYP BME 2021F")
-st.write(os.getenv('GOOGLE_API_KEY'))
 load_dotenv()
+st.write(os.getenv('GOOGLE_API_KEY'))
 os.environ["GOOGLE_API_KEY"] = os.getenv('GOOGLE_API_KEY')
 
 # Load model and initialize Google Generative AI
